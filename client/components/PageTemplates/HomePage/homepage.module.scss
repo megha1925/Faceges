@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  background-color: $light;
+  flex-direction: column;
+  min-height: 92vh;
+  width: 100%;
+  align-items: center;
+  .imgMain {
+    max-width: 300px;
+    img {
+      width: 100%;
+    }
+  }
+  .txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .links {
+    margin-top: 40px;
+    min-width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    .btn {
+      min-width: 150px;
+      display: flex;
+      justify-content: center;
+      background-color: $accent2;
+      padding: 1px 10px;
+      color: $dark1;
+      border-radius: 8px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .start {
+    flex-direction: column;
+    .butn {
+      margin-top: 10px;
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+}
+@media (max-width: 1200px) {
+}

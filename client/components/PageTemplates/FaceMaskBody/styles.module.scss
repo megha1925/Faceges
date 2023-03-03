@@ -1,0 +1,89 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 8vh;
+
+  .trainImage {
+    display: none;
+  }
+
+  .btnContainer {
+    display: inline-block;
+    padding: 10px 40px;
+    margin: 20px auto;
+  }
+
+  .btn {
+    float: left;
+    margin: 10px;
+    width: fit-content;
+    padding: 10px;
+    background-color: $accent2;
+    color: $dark1;
+    border-radius: 10px;
+    button {
+      background: none;
+      border: none;
+      outline: none;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+    &:hover {
+      box-shadow: 0 1px 0 2px $accent1;
+    }
+  }
+
+  .webcam {
+    display: block;
+  }
+
+  .head {
+    p {
+      width: fit-content;
+      margin: 10px auto;
+      color: $accent2;
+      font-weight: bold;
+      font-size: 1.8rem;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+
+  .output {
+    margin-top: 5vh;
+    display: block;
+    background-color: $accent1;
+    padding: 20px;
+    height: 150px;
+    width: 640px;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+    p {
+      color: $dark1;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-size: 1.2rem;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

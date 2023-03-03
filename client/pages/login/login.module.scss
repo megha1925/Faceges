@@ -1,0 +1,27 @@
+.container {
+  padding-right: 1.2em;
+  padding-left: 1.2em;
+  margin-right: auto;
+  margin-left: auto;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

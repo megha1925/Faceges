@@ -1,0 +1,63 @@
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0.5;
+    -webkit-transform: translateX(150px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+    transform: translateX(150px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.container {
+  animation: fadeIn 2s;
+  transition: all 0.4s ease-in-out;
+  position: fixed;
+  top: 100px;
+  right: 3%;
+  width: 250px;
+  z-index: 1010;
+  .danger {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $danger;
+    color: $light;
+    p {
+      font-size: 1.1rem;
+    }
+  }
+  .success {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $success;
+    color: $light;
+    p {
+      font-size: 1.1rem;
+    }
+  }
+  .notification {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $accent1;
+    color: $txt-dark;
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}

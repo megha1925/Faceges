@@ -1,0 +1,160 @@
+.bannerContain {
+  display: flex;
+  border-radius: 10px;
+  max-width: 100%;
+  height: fit-content;
+  position: relative;
+  // padding-bottom: 25%;
+  overflow: hidden;
+  .banner {
+    height: fit-content;
+    max-height: 320px;
+    width: 100%;
+  }
+  .changeBanner {
+    display: flex;
+    align-items: center;
+    background-color: $light;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 0.5rem;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 0 1px 2px 0 $grey;
+    bottom: 0;
+    right: 0;
+    .icon {
+      height: 1rem;
+    }
+    p {
+      margin: 0 5px;
+    }
+    &:hover {
+      box-shadow: 0 1px 2px 0 $dark;
+    }
+  }
+}
+.bannerform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  height: fit-content;
+  label {
+    display: inline-block;
+    position: relative;
+    height: 100px;
+    width: 60%;
+    div {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: $light;
+      border: 2px dotted $dark;
+      border-radius: 10px;
+      p {
+        padding: 2px 1.2rem;
+      }
+      .icon {
+        height: 2rem;
+      }
+    }
+    input[type="file"] {
+      position: absolute;
+      left: 0;
+      opacity: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      cursor: pointer;
+    }
+    &:hover {
+      border-radius: 10px;
+      box-shadow: 0 2px 4px 0 $grey;
+    }
+  }
+  .preview {
+    width: 100%;
+    max-width: 1280px;
+    max-height: 320px;
+    margin: 10px 0;
+    background-color: red;
+    .previewBannerImage {
+      border-radius: 10px;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      background-color: $light;
+      border: 1px solid $grey;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .previewNoImage {
+      background-color: $light;
+      border: 1px solid $grey;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+  }
+  .previewAvatarImage {
+    display: flex;
+    border: 1px solid $grey;
+    background-color: $light;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    p {
+      padding: 0 1.2rem;
+    }
+  }
+
+  button {
+    width: fit-content;
+    background-color: $accent1;
+    color: $txt-dark;
+    padding: 0 10px;
+    border-color: $accent1;
+    cursor: pointer;
+    height: 6vh;
+    border-radius: 4px;
+    &:hover {
+      box-shadow: 0 1px 2px 0 $dark;
+    }
+    .span {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+}
+
+@media (max-width: 500px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 1200px) {
+}

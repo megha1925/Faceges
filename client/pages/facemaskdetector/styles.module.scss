@@ -1,0 +1,38 @@
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 90vh;
+  .buy {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .wrap {
+      width: 80%;
+      min-height: 50vh;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $accent2;
+      border-radius: 15px;
+      .txt {
+        padding: 15px;
+      }
+      .btn {
+        min-width: 150px;
+        display: flex;
+        justify-content: center;
+        background-color: $accent1;
+        padding: 1px 10px;
+        color: $dark1;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+}

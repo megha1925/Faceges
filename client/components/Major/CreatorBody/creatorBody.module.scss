@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  .left {
+    background-color: $light-bg1;
+    flex: 1 1 20%;
+    min-width: 150px;
+  }
+  .content {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    height: 300px;
+    .app {
+      flex-grow: 1;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 1px 0 1px $accent1;
+
+      a {
+        cursor: pointer;
+        img {
+          height: 200px;
+          width: 150px;
+        }
+        p {
+          font-size: 1.2rem;
+          font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
+        }
+      }
+      &:hover {
+        box-shadow: 0 2px 0 4px $accent1;
+      }
+    }
+  }
+}
